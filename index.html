@@ -6,6 +6,80 @@
     <title>Exo 12</title>
 </head>
 <body>
+    <h2>Formulaire d’Inscription</h2>
+
+<form>
+
+
+<fieldset>
+<legend>Informations personnelles</legend>
+
+<label>Nom :</label>
+<input type="text" name="nom" required>
+<br><br>
+<label>Prénom :</label>
+<input type="text" name="prenom" required>
+<br><br>
+<label>Email :</label>
+<input type="email" name="email" required>
+<br><br>
+<label>Mot de passe :</label>
+<input type="password" name="password" required>
+<br><br>
+<label>Date de naissance :</label>
+<input type="date" name="date_naissance" required>
+
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Informations complémentaires</legend>
+
+<label>Sexe :</label>
+
+<input type="radio" name="sexe" value="homme" required> Homme
+<input type="radio" name="sexe" value="femme"> Femme
+
+<br><br>
+
+<label>Ville :</label>
+
+<select name="ville" required>
+<option value="">--Choisir une ville--</option>
+<option value="Yaoundé">Yaoundé</option>
+<option value="Douala">Douala</option>
+<option value="Bafoussam">Bafoussam</option>
+<option value="Garoua">Garoua</option>
+<option value="Bamenda">Bamenda</option>
+</select>
+
+<br><br>
+
+<label>Niveau d'études :</label>
+
+<select name="niveau" required>
+<option value="">--Choisir votre niveau--</option>
+<option value="secondaire">Secondaire</option>
+<option value="licence">Licence</option>
+<option value="master">Master</option>
+<option value="doctorat">Doctorat</option>
+</select>
+
+<br><br>
+
+<input type="checkbox" name="newsletter">
+Recevoir la newsletter
+<br><br>
+<input type="checkbox" name="conditions" required>
+J'accepte les conditions d'utilisation
+</fieldset>
+<br>
+<input type="submit" value="Envoyer">
+<input type="reset" value="Effacer">
+
+</form>
+
     
 </body>
 </html>
